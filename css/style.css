@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Bungee', cursive;
+  background-image: url(https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1068.jpg);
+  background-size: 100% 100%;
+}
+
+header{
+  height: 100px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.player,
+.score,
+.computer{
+  font-size: 60px;
+  line-height: 100px;
+  color: white;
+  display: inline-block;
+  float: left;
+}
+
+.player{
+  width: 40vw;
+  text-align: right;
+}
+
+.score{
+  width: 20vw;
+  text-align: center;
+}
+
+.computer{
+  width: 40vw;
+  text-align: left;
+}
+
+#game{
+  height: calc(75vh - 100px);
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-table,
+.computer-table{
+  width: 35vw;
+  height: 25vw;
+  background-color: lightgrey;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.player-table::after,
+.computer-table::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.player-half,
+.computer-half{
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-btn{
+  height: 25vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+}
+
+.btn{
+  font-size: 60px;
+  display: inline-block;
+  color: green;
+  border: 5px solid green;
+  border-radius: 15px;
+  padding: 20px 40px;
+  transform: translate(-70%, -70%);
+  animation: gioca 1s linear infinite;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+@keyframes gioca {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
+.btn:hover{
+  color: lightgreen;
+  border: 5px solid lightgreen;
+  background-color: green;
+}
+
+#user-win{
+  font-size: 100px;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+#draw{
+  font-size: 100px;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: blue;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+#user-lose{
+  font-size: 100px;
+  text-align: center;
+  padding: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gioco dei dadi</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="player"><span id="user-name"></span></div>
+    <div class="score">
+      <span id="score">0 : 0</span>
+    </div>
+    <div class="computer">
+      Computer
+    </div>
+  </header>
+  <!-- /HEADER -->
+  <!-- SEZIONE DI GIOCO -->
+  <section id="game">
+    <div class="player-table">
+      <div class="player-half">
+        <img src="img/b1.jpg" class="hidden" id="b1-l" alt="Dado">
+        <img src="img/b2.jpg" class="hidden" id="b2-l" alt="Dado">
+        <img src="img/b3.jpg" class="hidden" id="b3-l" alt="Dado">
+        <img src="img/b4.jpg" class="hidden" id="b4-l" alt="Dado">
+        <img src="img/b5.jpg" class="hidden" id="b5-l" alt="Dado">
+        <img src="img/b6.jpg" class="hidden" id="b6-l" alt="Dado">
+      </div>
+      <div class="player-half">
+        <img src="img/b1.jpg" class="hidden" id="b1-r" alt="Dado">
+        <img src="img/b2.jpg" class="hidden" id="b2-r" alt="Dado">
+        <img src="img/b3.jpg" class="hidden" id="b3-r" alt="Dado">
+        <img src="img/b4.jpg" class="hidden" id="b4-r" alt="Dado">
+        <img src="img/b5.jpg" class="hidden" id="b5-r" alt="Dado">
+        <img src="img/b6.jpg" class="hidden" id="b6-r" alt="Dado">
+      </div>
+    </div>
+    <div class="computer-table">
+      <div class="computer-half">
+        <img src="img/n1.jpg" class="hidden" id="n1-l" alt="Dado">
+        <img src="img/n2.jpg" class="hidden" id="n2-l" alt="Dado">
+        <img src="img/n3.jpg" class="hidden" id="n3-l" alt="Dado">
+        <img src="img/n4.jpg" class="hidden" id="n4-l" alt="Dado">
+        <img src="img/n5.jpg" class="hidden" id="n5-l" alt="Dado">
+        <img src="img/n6.jpg" class="hidden" id="n6-l" alt="Dado">
+      </div>
+      <div class="computer-half">
+        <img src="img/n1.jpg" class="hidden" id="n1-r" alt="Dado">
+        <img src="img/n2.jpg" class="hidden" id="n2-r" alt="Dado">
+        <img src="img/n3.jpg" class="hidden" id="n3-r" alt="Dado">
+        <img src="img/n4.jpg" class="hidden" id="n4-r" alt="Dado">
+        <img src="img/n5.jpg" class="hidden" id="n5-r" alt="Dado">
+        <img src="img/n6.jpg" class="hidden" id="n6-r" alt="Dado">
+      </div>
+    </div>
+  </section>
+  <!-- /SEZIONE DI GIOCO -->
+  <!-- PULSANTE GIOCA -->
+  <section id="play-btn">
+    <div class="btn" id="play">
+      Gioca!
+    </div>
+  </section>
+  <!-- /PULSANTE GIOCA -->
+  <!-- VITTORIA USER -->
+  <div class="hidden" id="user-win">
+    Hai vinto!
+  </div>
+  <!-- /VITTORIA USER -->
+  <!-- PARI -->
+  <div class="hidden" id="draw">
+    Parità!
+  </div>
+  <!-- /PARI -->
+  <!-- VITTORIA PC -->
+  <div class="hidden" id="user-lose">
+    Hai perso...
+  </div>
+  <!-- /VITTORIA PC -->
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
